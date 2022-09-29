@@ -11,6 +11,7 @@ This binary is used to demonstrate process injection without the usage of [SysWh
   
 ## undetected.exe
 This executable utilises [SysWhispers2](https://github.com/jthuraisamy/SysWhispers2) to make direct system calls injecting shellcode into a specified process. This executable will hopefully do so without being detected by AV/EDR.
+![](screenshot.png)
   
 ## Notes
 Within the undetected.exe binary I had to XOR encrypt the shellcode payload. This was due to static analysis flagging the shell code as malicious.
