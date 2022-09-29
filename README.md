@@ -17,3 +17,5 @@ This executable utilises [SysWhispers2](https://github.com/jthuraisamy/SysWhispe
 Within the undetected.exe binary I had to XOR encrypt the shellcode payload. This was due to static analysis flagging the shell code as malicious.
 The command used to generate the final shellcode was:
 `.\msfvenom.bat -p windows/x64/messagebox TEXT="The POC Worked!" --encrypt xor --encrypt-key ~ -f csharp`
+
+[VirusTotal Report](https://www.virustotal.com/gui/file/0ea518677c8eda5480c702f68e2fc98696edcf338f360b0adcf3cd9c02533a1d/summary)
